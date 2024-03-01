@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "motokoPro_backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/motokoPro_backend/main.mo",
+      "type": "motoko"
+    },
+    "motokoPro_frontend": {
+      "dependencies": [
+        "motokoPro_backend"
+      ],
+      "source": [
+        "src/motokoPro_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "motokoPro_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
